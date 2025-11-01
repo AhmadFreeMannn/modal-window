@@ -16,12 +16,10 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
   );
 }
 
-btnCloseModal.addEventListener("click", function () {
+const clsoeModal = function () {
   modal.classList.add("hidden");
   overLay.classList.add("hidden");
-});
+};
 
-overLay.addEventListener("click",function(){
-  modal.classList.add("hidden");
-  overLay.classList.add("hidden");
-})
+btnCloseModal.addEventListener("click", clsoeModal);
+overLay.addEventListener("click", clsoeModal);
